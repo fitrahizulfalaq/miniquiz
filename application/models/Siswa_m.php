@@ -48,6 +48,12 @@ class Siswa_m extends CI_Model {
 	}
 
 	function hapus($id){
+	  $this->db->where('user_id', $id);
+	  $this->db->delete('tb_penilaian');
+
+	  $this->db->where('user_id', $id);
+	  $this->db->delete('tb_riwayat_jawaban');
+
 	  $this->db->where('id', $id);
 	  $this->db->delete('tb_siswa');
 

@@ -58,7 +58,7 @@
                 <input type="text" class="form-control" name="pil_d" placeholder="Pilihan D" value="<?= set_value('pil_d');?>" required>
               </div>                            
               <?php echo form_error('pil_d')?>
-              <div class="input-group mb-3">
+              <!-- <div class="input-group mb-3">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span>E</span>
@@ -66,7 +66,7 @@
                 </div>
                 <input type="text" class="form-control" name="pil_e" placeholder="Pilihan E" value="<?= set_value('pil_e');?>" required>
               </div>                            
-              <?php echo form_error('pil_e')?>                        
+              <?php echo form_error('pil_e')?>   -->                      
             </div>
             <div class="form-group">
               <label>Kunci</label>
@@ -76,7 +76,7 @@
                 <option value="pil_b">Pilihan B</option>
                 <option value="pil_c">Pilihan C</option>
                 <option value="pil_d">Pilihan D</option>
-                <option value="pil_e">Pilihan E</option>
+                <!-- <option value="pil_e">Pilihan E</option> -->
               </select>                
               <?php echo form_error('kunci')?>
             </div>

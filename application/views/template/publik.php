@@ -26,6 +26,10 @@
 </head>
 
 <body class="hold-transition layout-top-nav layout-fixed layout-footer-fixed pace-warning">
+  <audio hidden autoplay loop>
+    <source src="<?=site_url()?>/assets/dist/music/bgmusic.mp3" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio> 
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-dark">

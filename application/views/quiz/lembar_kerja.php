@@ -40,7 +40,7 @@
               <input type="radio" name="pilihan[<?=$dataso->id?>]" value="B<?= $dataso->pil_b?>"> B.  <?= $dataso->pil_b?> <br>
               <input type="radio" name="pilihan[<?=$dataso->id?>]" value="C<?= $dataso->pil_c?>"> C.  <?= $dataso->pil_c?> <br>
               <input type="radio" name="pilihan[<?=$dataso->id?>]" value="D<?= $dataso->pil_d?>"> D.  <?= $dataso->pil_d?> <br>
-              <input type="radio" name="pilihan[<?=$dataso->id?>]" value="E<?= $dataso->pil_e?>"> E.  <?= $dataso->pil_e?> <br>
+              <!-- <input type="radio" name="pilihan[<?=$dataso->id?>]" value="E<?= $dataso->pil_e?>"> E.  <?= $dataso->pil_e?> <br> -->
             <hr>
             <?php }?>
             <input type="hidden" name="jumlah" value="<?=$row->num_rows()?>">

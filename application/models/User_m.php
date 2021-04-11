@@ -55,6 +55,17 @@ class User_m extends CI_Model {
 
 	  $this->db->where('id',$params['id']);
 	  $this->db->update('tb_user',$params);
+	}
+
+	function hapus($id){
+	  $this->db->where('user_id', $id);
+	  $this->db->delete('tb_soal');
+
+	  $this->db->where('id', $id);
+	  $this->db->delete('tb_user');
+
 	}	
+
+		
 
 }

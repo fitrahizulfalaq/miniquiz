@@ -26,6 +26,10 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed pace-green sidebar-collapse">
+  <audio hidden autoplay loop id="bgmusic">
+    <source src="<?=site_url()?>/assets/dist/music/bgmusic.mp3" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio> 
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-yellow navbar-light">
@@ -44,8 +48,11 @@
       </li>      
     </ul>
     <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">            
+    <ul class="navbar-nav ml-auto"> 
       <li class="nav-item">
+        <a class="nav-link">Musik : <i class="fas fa-stop" onclick="stopMusic()"></i> - <i class="fas fa-play" onclick="playMusic()"></i></a>
+      </li>           
+      <li class="nav-item">        
         <a class="nav-link" href="<?=site_url('auth/logout')?>"><i class="fas fa-sign-out-alt"></i>Keluar</a>
       </li>
     </ul>
@@ -107,6 +114,10 @@
             <i class="nav-icon fas fa-chalkboard-teacher"></i><p>User</p></a>
           </li>
           <?php } ?>
+          <li class="nav-item">            
+            <a href="<?=site_url('page/setting')?>" class="nav-link <?=$this->uri->segment(2) == 'setting' ? "active" : ""?>">
+            <i class="nav-icon fas fa-cog"></i><p>Pengaturan</p></a>
+          </li>
           <li class="nav-item">            
             <a href="<?=site_url('page/tentangs')?>" class="nav-link <?=$this->uri->segment(2) == 'tentangs' ? "active" : ""?>">
             <i class="nav-icon fas fa-info"></i><p>Tentang</p></a>
@@ -184,6 +195,19 @@
 
 <!-- PAGE SCRIPTS -->
 <script src="<?=base_url()?>/assets/dist/js/pages/dashboard2.js"></script>
+<script>
+  function stopMusic() {
+    const audio = document.querySelector("#bgmusic");
+    audio.pause();
+    audio.currentTime = 0;
+  }
+
+  function playMusic() {
+    const audio = document.querySelector("#bgmusic");
+    audio.play();
+    audio.currentTime = 0;
+  } 
+</script>
 
 <?php $this->load->view("script/footer_function")?>
 </body>

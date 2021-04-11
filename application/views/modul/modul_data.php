@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-12">
       <div class="card-header">
-        <?php if ($this->fungsi->user_login()->tipe_user < 2) { } else {;?>
+        <?php if ($this->fungsi->user_login()->tipe_user < 1) { } else {;?>
         <a href="<?=base_url('modul/tambah');?>" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Tambah</a>          
         <?php }?>
         <a href="<?=base_url('');?>" class="btn btn-info float-right btn-sm"><i class="fas fa-backward"></i> Kembali</a>          

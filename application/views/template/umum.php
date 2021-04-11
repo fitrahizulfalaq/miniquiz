@@ -20,6 +20,10 @@
   <link rel="stylesheet" href="<?=base_url()?>/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 </head>
 <body class="hold-transition layout-top-nav layout-footer-fixed">
+  <audio hidden autoplay loop>
+    <source src="<?=site_url()?>/assets/dist/music/bgmusic.mp3" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio> 
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-green navbar-dark">

@@ -25,4 +25,11 @@ class Page extends CI_Controller {
 		$data['menu'] = "Tentang Website";
 		$this->templateadmin->load('template/dashboard','page/tentangs',$data);
 	}
+
+	public function setting()
+	{
+		check_not_login();
+		$data['menu'] = "Pengaturan";
+		$this->templateadmin->load('template/dashboard','page/pengaturan',$data);
+	}
 }

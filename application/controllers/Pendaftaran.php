@@ -19,8 +19,8 @@ class Pendaftaran extends CI_Controller {
 		//Load librarynya dulu
 		$this->load->library('form_validation');
 		//Atur validasinya
-		$this->form_validation->set_rules('username', 'username', 'min_length[3]|is_unique[tb_user.username]|max_length[20]');
-		$this->form_validation->set_rules('email', 'email', 'min_length[3]|is_unique[tb_user.email]|max_length[50]');
+		$this->form_validation->set_rules('username', 'username', 'min_length[3]|is_unique[tb_user.username]|is_unique[tb_user_tmp.username]|max_length[20]');
+		$this->form_validation->set_rules('email', 'email', 'min_length[3]|is_unique[tb_user.email]|is_unique[tb_user_tmp.email]|max_length[50]');
 		$this->form_validation->set_rules('password', 'password', 'min_length[3]|max_length[20]');
 		$this->form_validation->set_rules('hp', 'hp', 'min_length[10]|max_length[15]');
 

@@ -137,7 +137,7 @@ class User extends CI_Controller {
         $previllage = 2;
         check_super_user($this->session->tipe_user,$previllage);
 
-      $id = $this->uri->segment(3);
+        $id = $this->uri->segment(3);
         
 
         //Action          
@@ -164,7 +164,6 @@ class User extends CI_Controller {
             $this->session->set_flashdata('warning','Tidak Bisa Menghapus Diri Sendiri ataupun Menghapus Kategori User diatasnya');
             redirect('user');
         }
-
 
         $itemfoto = $this->user_m->get($id)->row();     
         if ($itemfoto->foto != null) {

@@ -23,7 +23,7 @@ class Soal_m extends CI_Model {
 	  $params['pil_b'] =  $post['pil_b'];	  
 	  $params['pil_c'] =  $post['pil_c'];	  
 	  $params['pil_d'] =  $post['pil_d'];	  
-	  $params['pil_e'] =  $post['pil_e'];
+	  $params['pil_e'] =  null;
 	  $jawaban = $post["kunci"];	  
 	  $params['kunci'] =  $post[$jawaban];	  
 	  $params['pembahasan'] =  $post['pembahasan'];	  
@@ -49,7 +49,7 @@ class Soal_m extends CI_Model {
 	  $params['pil_b'] =  $post['pil_b'];	  
 	  $params['pil_c'] =  $post['pil_c'];	  
 	  $params['pil_d'] =  $post['pil_d'];	  
-	  $params['pil_e'] =  $post['pil_e'];
+	  $params['pil_e'] =  null;
 	  $jawaban = $post["kunci"];	  
 	  $params['kunci'] =  $post[$jawaban];	  
 	  $params['pembahasan'] =  $post['pembahasan'];	  

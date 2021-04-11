@@ -65,7 +65,7 @@ class Soal extends CI_Controller {
 
 	  	$id = $this->uri->segment(3);
 	  	//Mencegeah bypass
-		if ($this->fungsi->pilihan_advanced("tb_soal","id",$id)->row("user_id") != $this->fungsi->user_login()->id ) {
+		if ($this->fungsi->pilihan_advanced("tb_soal","id",$id)->row("user_id") != $this->fungsi->user_login()->id and $this->session->tipe_user < 2 ) {
 			$this->session->set_flashdata('danger','Bukan Aksesnya');
 			redirect('soal');
 		}

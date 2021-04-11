@@ -27,6 +27,11 @@
 
 <body class="hold-transition login-page bg-green pace-warning" style="background-image: url(<?= base_url('/assets/dist/img/tiles.jpg')?>); background-repeat: repeat;">
 
+  <audio hidden autoplay loop>
+    <source src="<?=site_url()?>/assets/dist/music/bgmusic.mp3" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio> 
+
 <div class="col-lg-8">
   <!-- /.login-logo -->
   <div class="card login-card-body">
