@@ -3,7 +3,7 @@
   <div class="container-fluid">    
     <div class="row">      
       <!-- Menu-->
-      <div class="col-lg-2 col-4">      	
+      <div class="col-lg-2 col-4">        
         <!-- small card -->
         <div class="small-box bg-white">
           <div class="inner text-center">
@@ -88,6 +88,22 @@
         </div>
       </div>       
       <?php } ?>
+      <?php if ($this->session->tipe_user < 2 ) {  } else { ?>
+      <!-- Menu-->
+      <div class="col-lg-2 col-4">        
+        <!-- small card -->
+        <div class="small-box bg-white">
+          <div class="inner text-center">
+            <a href="<?= base_url('pendaftaran')?>">
+            <img src="<?= base_url("")?>/assets/dist/img/pendaftaran.png" alt="" width="100%">
+            </a>
+          </div>          
+          <a href="<?= base_url('pendaftaran')?>" class="small-box-footer">
+            Pendaftaran
+          </a>
+        </div>
+      </div>       
+      <?php } ?>
       <!-- Menu-->
       <div class="col-lg-2 col-4">        
         <!-- small card -->
@@ -106,4 +122,4 @@
     <!-- /.row -->
   </div>
 </section>
-<!-- /.content
+<!-- /.content -->
