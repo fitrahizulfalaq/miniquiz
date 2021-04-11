@@ -19,7 +19,7 @@
               <label>Username</label>
               <div class="input-group mb-3">
                 <input type="hidden" name="id" required="" value="<?= $this->input->post('id') ?? $row->id ?>">
-                <input type="text" class="form-control" name="username" placeholder="username" value="<?= $this->input->post('username') ?? $row->username ?>" readonly required>
+                <input type="text" class="form-control" name="username" placeholder="username" value="<?= $this->input->post('username') ?? $row->username ?>" readonly required>                
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-users"></span>

@@ -3,7 +3,7 @@
   <div class="container-fluid">    
     <div class="row">      
       <!-- Menu-->
-      <div class="col-lg-2 col-4">        
+      <div class="col-lg-2 col-4">      	
         <!-- small card -->
         <div class="small-box bg-white">
           <div class="inner text-center">
@@ -122,4 +122,4 @@
     <!-- /.row -->
   </div>
 </section>
-<!-- /.content -->
+<!-- /.content

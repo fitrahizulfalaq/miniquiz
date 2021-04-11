@@ -4,7 +4,7 @@
     <div class="col-12">
       <div class="col-12">
       <div class="card-header">
-        <a href="<?=base_url('lisensi');?>" class="btn btn-info float-right"><i class="fas fa-backward"></i> Kembali</a>          
+        <a href="<?=base_url('siswa');?>" class="btn btn-info float-right btn-sm"><i class="fas fa-backward"></i> Kembali</a>          
       </div>
       <div class="card card-primary">
         <div class="card-header">

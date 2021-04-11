@@ -20,6 +20,7 @@
               <div class="input-group mb-3">
                 <input type="hidden" name="id" required="" value="<?= $this->input->post('id') ?? $row->id ?>">
                 <input type="text" class="form-control" name="username" placeholder="Ex: narutouzumaki" value="<?= $this->input->post('username') ?? $row->username ?>" required>
+                <input type="text" class="form-control" value="<?= $this->input->post('email') ?? $row->email ?>" required>
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-users"></span>
