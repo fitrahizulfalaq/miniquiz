@@ -11,16 +11,21 @@
         <div class="card card-info card-outline">
           <div class="card-body">
             <div class="text-center">
-              <img class="img-fluid" src="<?=base_url()?>/assets/dist/img/login-logo.png" width="400px">
+              <img class="img-fluid" src="<?=base_url()?>/assets/dist/img/login-logo.png" width="400px"> <br>
+              <hr>
+            </div>
+            <div class="text-left">
+              <img class="img-fluid rounded" src="<?=base_url()?>/assets/dist/img/pembuat.jpg" width="500px">
+              <hr>
             </div>
             <br>
             <div class="text-justify">
               <h3>Pengembang</h3>
               <p>
-                Santi Dwi Retno Eko Putro<br>
+                <h5>Santi Dwi Retno Eko Putro</h5>
                 NIM 170741638534<br>
                 Pendidikan IPS/Universitas Negeri Malang<br>
-                Email : <br> santi.dwi.1707416@students.um.ac.id<br>
+                Email : santi.dwi.1707416@students.um.ac.id<br>
               </p>
             </div>
           </div>

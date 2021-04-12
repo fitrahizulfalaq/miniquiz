@@ -50,7 +50,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto"> 
       <li class="nav-item">
-        <a class="nav-link">Musik : <i class="fas fa-stop" onclick="stopMusic()"></i> - <i class="fas fa-play" onclick="playMusic()"></i></a>
+        <a class="nav-link"><i class="fas fa-stop" id="musicBtn" onclick="playMusic()"></i></a>
       </li>           
       <li class="nav-item">        
         <a class="nav-link" href="<?=site_url('auth/logout')?>"><i class="fas fa-sign-out-alt"></i>Keluar</a>
@@ -196,17 +196,22 @@
 <!-- PAGE SCRIPTS -->
 <script src="<?=base_url()?>/assets/dist/js/pages/dashboard2.js"></script>
 <script>
-  function stopMusic() {
-    const audio = document.querySelector("#bgmusic");
-    audio.pause();
-    audio.currentTime = 0;
-  }
+    var myAudio = document.getElementById("bgmusic");
+    var isPlaying = true;
+    var x = document.getElementById("musicBtn");
 
-  function playMusic() {
-    const audio = document.querySelector("#bgmusic");
-    audio.play();
-    audio.currentTime = 0;
-  } 
+    function playMusic() {
+      isPlaying ? myAudio.pause() : myAudio.play();
+    };
+
+    myAudio.onplaying = function() {
+      isPlaying = true;
+      x.className = "fas fa-stop";
+    };
+    myAudio.onpause = function() {
+      isPlaying = false;
+      x.className = "fas fa-music";
+    };
 </script>
 
 <?php $this->load->view("script/footer_function")?>
