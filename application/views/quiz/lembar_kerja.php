@@ -20,11 +20,9 @@
             <h5><strong>PETUNJUK PENGERJAAN:</strong></h5>
             <ol start="1" type="1">
               <li>Berdoalah sebelum mengerjakan soal.</li>
-              <li>Teliti soal terlebih dahulu, perangkat soal terdiri       dari 20 soal pilihan ganda dan 1 soal uraian.</li>
-              <li>Untuk soal pilihan ganda, berilah tanda (X) pada huruf       a, b, c, d dan e pada jawaban yang Anda anggap benar.</li>
-              <li>Untuk soal Essay, tulislah pendapat Anda pada kolom       yang telah disediakan. </li>
-              <li>Setelah semua pertanyaan selesai dijawab, nilai skor       soal Pilihan Ganda secara otomatis akan langsung keluar dan soal Essay       nilai akan di input secara manual. </li>
-              <li>Selamat mengerjakan</li>
+              <li>Teliti soal terlebih dahulu, perangkat soal terdiri       dari 25 soal pilihan ganda dan 1 soal uraian.</li>
+              <li>Untuk soal pilihan ganda, berilah tanda (X) pada huruf       a, b, c, dan d pada jawaban yang Anda anggap benar.</li>
+              <li>Setelah semua pertanyaan selesai dijawab, nilai skor       soal Pilihan Ganda secara otomatis akan langsung keluar </li>
             </ol>
             <hr>
 
