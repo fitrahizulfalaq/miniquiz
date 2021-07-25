@@ -51,6 +51,26 @@
         </div>
         <!-- /.card-body -->
       </div>
+
+      <div class="card collapsed-card">
+        <div class="card-header bg-success">
+          <h3 class="card-title">Pembahasan</h3>
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <?php
+            $no = 1;
+            foreach ($pembahasan->result() as $key => $data) {;
+          ?>
+            <p> <?= $data->pembahasan?> </p>
+            <hr>
+          <?php } ?>
+        </div>
+        <!-- /.card-body -->
+      </div>
       <!-- /.card -->
     </div>
     <!-- /.col -->

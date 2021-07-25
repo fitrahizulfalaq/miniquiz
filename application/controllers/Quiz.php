@@ -187,6 +187,7 @@ class Quiz extends CI_Controller {
 		$data["status"] = $status;
 		$data["pesan"]  = $pesan;
 		$data['menu'] = "Hasil";
+		$data['pembahasan'] = $this->quiz_m->getPembahasan();
 
 		$this->templateadmin->load('template/publik','quiz/hasil',$data);
 	}
@@ -199,6 +200,7 @@ class Quiz extends CI_Controller {
 		$data['salah'] = $this->quiz_m->getNilai($this->session->id)->row('salah');
 		$data['kosong'] = $this->quiz_m->getNilai($this->session->id)->row('kosong');
 		$data['jumlah_soal'] = $this->quiz_m->getSoal()->num_rows();
+		$data['pembahasan'] = $this->quiz_m->getPembahasan();
 		$this->templateadmin->load('template/publik','quiz/hasil',$data);
 	}
 

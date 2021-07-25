@@ -28,6 +28,13 @@ class Quiz_m extends CI_Model {
 		$this->db->order_by('created','DESC');
 		$query = $this->db->get('tb_modul',$limit, $start);
 		return $query;
+	}
+
+	public function getPembahasan() 
+	{		
+		$this->db->from('tb_soal');
+		$query = $this->db->get();
+		return $query;
 	}	
 
 	function simpan_riwayat_jawaban($user_id,$soal_id,$jawaban)
