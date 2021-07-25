@@ -96,10 +96,10 @@
             <a href="<?=site_url('soal')?>" class="nav-link <?=$this->uri->segment(1) == 'soal' ? "active" : ""?>">
             <i class="nav-icon fas fa-chalkboard-teacher"></i><p>Soal</p></a>
           </li>
-          <li class="nav-item">            
+          <!-- <li class="nav-item">            
             <a href="<?=site_url('modul')?>" class="nav-link <?=$this->uri->segment(1) == 'modul' ? "active" : ""?>">
             <i class="nav-icon fas fa-chalkboard-teacher"></i><p>Materi</p></a>
-          </li>
+          </li> -->
           <li class="nav-item">            
             <a href="<?=site_url('siswa')?>" class="nav-link <?=$this->uri->segment(1) == 'siswa' ? "active" : ""?>">
             <i class="nav-icon fas fa-chalkboard-teacher"></i><p>Siswa</p></a>

@@ -31,8 +31,7 @@
         </div>
       </div> 
       <!-- Menu-->
-      <div class="col-lg-2 col-4">        
-        <!-- small card -->
+      <!-- <div class="col-lg-2 col-4">        
         <div class="small-box bg-white">
           <div class="inner text-center">
             <a href="<?= base_url('modul')?>">
@@ -43,7 +42,7 @@
             Materi
           </a>
         </div>
-      </div> 
+      </div>  -->
       <!-- Menu-->
       <div class="col-lg-2 col-4">        
         <!-- small card -->
